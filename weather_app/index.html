@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="left">
+            <div class="weather-data">
+                <h1 id="w-temp">0°</h1>
+                <div class="wrapper">
+                    <h1 id="wc-name">-</h1>
+                    <div class="wrapper-1" id="icon-container">
+                        <p id="w-type">-</p>
+                        <i class="icon"></i>
+                        <h5 id="date"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-top">
+                <div class="input-feild">
+                    <input id="w-input" type="text" spellcheck="false" placeholder="Enter City Name" autocomplete="false">
+                </div>
+                <button class="search_btn" id="search">Search</button>
+            </div>
+            <div class="right-bottom">
+                    <div class="details">
+                        <h3>Weather Details</h3>
+                        <div class="weather-details">
+                            <h4>Temperature:  <span id="w-temp1">0°</span></h4>
+                            <h4>Feels Like: <span id="w-feels">0°</span></h4>
+                            <h4>Wind Speed: <span id="w-wind">0km/h</span> </h4>
+                            <h4>Humidity: <span id="w-humid">0%</span></h4>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- js file -->
+    <script src="./script.js"></script>
+</body>
+</html>
